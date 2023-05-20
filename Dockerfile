@@ -3,7 +3,7 @@ FROM alpine:3.14
 
 ENV LANG en_US.UTF-8
 
-RUN apk --update add bash python3 py3-pip nodejs-current yarn build-base tzdata rsync fd && \
+RUN apk --update add bash python3 py3-pip nodejs-current yarn build-base cargo tzdata rsync fd && \
     apk add sshpass openssh-client openssl ca-certificates git && \
     apk add libffi-dev python3-dev jpeg-dev yaml-dev zlib-dev postgresql-dev libxml2-dev libxslt-dev && \
     apk add gdk-pixbuf-dev cairo-dev pango-dev && \
